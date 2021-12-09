@@ -1,0 +1,112 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Verdana, sans-serif;
+}
+
+.mySlides {
+	display: none;
+}
+
+img {
+	vertical-align: middle;
+	max-height: 500px;
+}
+/* 슬라이드 쇼 컨테이너 */
+.slidshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: 0 auto;
+	widows: 500px;
+}
+/* 이미지 가운데 정렬 */
+.mySlides{
+  text-align: center;
+}
+/* 양옆 다음/이전 버튼 */
+.prev, .next {
+	cursor: pointer; /* 커서가 올라가면 커서모양 바뀜 */
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: gray;
+	font-weight: bold;
+	font-size: 50px;
+	transition: 0.6s ease; /* 0.6초에 걸쳐 변하게 */
+	border-radius: 0 3px 3px 0; /* 테두리를 둥글게 */
+	user-select: none;
+}
+
+/* 포지션 버튼 오른쪽으로  */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+/* 마우스 올라가면 주변 색 변함 */
+.prev:hover, .next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* 페이징 부분 (1/ n) */
+.numbertext {
+	color: white;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+/* 점으로 옮기는 부분 */
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+	background-color: #717171;
+}
+
+/* 페이드 애니메이션 */
+.fade1 {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@
+-webkit-keyframes fade {
+	from {opacity: .4
+}
+
+to {
+	opacity: 1
+}
+
+}
+@
+keyframes fade {
+	from {opacity: .4
+}
+
+to {
+	opacity: 1
+}
+
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+	.prev, .next, .text {
+		font-size: 11px
+	}
+}

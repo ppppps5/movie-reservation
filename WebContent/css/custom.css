@@ -1,0 +1,93 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+* {
+	font-family: 'Nanum Gothic';
+}
+
+thead th {
+	background-color: #006Dcc;
+	color: white;
+	text-align: center;
+}
+
+tr td:first-child, tr th:first-child {
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+}
+
+tr td:last-child, tr th:last-child {
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+}
+
+h5 {
+	font-family: 'Noto Sans KR';
+	font-size: 15px;
+}
+
+h4 {
+	font-family: 'Noto Sans KR';
+}
+
+h3 {
+	font-family: 'Hanna';
+}
+
+h2 {
+	font-family: 'Hanna';
+}
+
+h1 {
+	font-family: 'Hanna';
+}
+
+a {
+	margin: 0 auto 0 auto;
+	text-align: center;
+}
+
+.vertical-alignment-helper {
+	display: table;
+	height: 100%;
+	weight: 100%;
+	pointer-events: none;
+}
+
+.vertical-alignment-center {
+	display: table-cell;
+	vertical-align: middle;
+	pointer-events: none;
+}
+
+.vertical-alignment-helper {
+	width: inherit;
+	height: inherit;
+	margin: 0 auto;
+	pointer-events: none;
+}
+
+wrap {
+	width: 490px;
+	text-align: center;
+	margin: 0 auto 0 auto;
+}
+
+chk {
+	text-align: center;
+}
+
+cancelBtn {
+	visibility: visible;
+}
+
+useBtn {
+	visibility: hidden;
+}
+
+.footer {
+	margin:0 auto; text-align:center;
+}
